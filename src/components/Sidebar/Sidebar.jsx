@@ -12,7 +12,7 @@ function Sidebar() {
         href="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
       >
-          <img src={LogoKuyliner} style={{width: "150px"}} alt="" />
+        <img src={LogoKuyliner} style={{ width: "150px" }} alt="" />
       </a>
       <ButtonBar />
     </section>
