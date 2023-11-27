@@ -5,19 +5,26 @@ import NavbarKuyliner from "./components/Navbar/NavbarKuyliner";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Profile from "./pages/Profile/Profile";
 import Product from "./pages/Product/Product";
+import Promotion from "./pages/Promotion/Promotion";
+import AddProduct from "./pages/Product/AddProduct";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Container fluid>
         <Row>
-          <Col xs={"3"} className={"p-0"}>
+          <Col xs={"2"} className={"p-0"}>
             <Sidebar />
           </Col>
           <Col className={"p-0"}>
             <NavbarKuyliner />
-            {/* <Profile /> */}
-            <Product />
+            <Routes>
+              <Route path="/" element={<Profile />} />
+              <Route path="/products" element={<Product />} />
+              <Route path="/products/add" element={<AddProduct />} />
+              <Route path="/promotion" element={<Promotion />} />
+            </Routes>
           </Col>
         </Row>
       </Container>

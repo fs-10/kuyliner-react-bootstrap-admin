@@ -1,13 +1,12 @@
 import React from "react";
-import React from "react";
 import { Table, Image, Button } from "react-bootstrap";
 
 function Promotion() {
   return (
     <section className="m-3 p-3 border rounded-2 ">
       <div className="d-flex justify-content-between ">
-        <h2>Products</h2>
-        <Button>Add Products</Button>
+        <h2>Promotion</h2>
+        <Button>Add Promotion</Button>
       </div>
       <hr />
       <Table striped bordered hover>
@@ -16,8 +15,8 @@ function Promotion() {
             <th>No</th>
             <th>Image</th>
             <th>Name Kuliner</th>
-            <th>Category</th>
-            <th>Price</th>
+            <th>Due Date</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -26,14 +25,20 @@ function Promotion() {
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-            <td>@mdo</td>
+            <td className="d-flex justify-content-center gap-2 ">
+              <Button variant="warning">Edit</Button>
+              <Button variant="danger">Delete</Button>
+            </td>
           </tr>
           <tr>
             <td>2</td>
             <td>Jacob</td>
             <td>Thornton</td>
             <td>@fat</td>
-            <td>@fat</td>
+            <td className="d-flex justify-content-center gap-2 ">
+              <Button variant="warning">Edit</Button>
+              <Button variant="danger">Delete</Button>
+            </td>
           </tr>
         </tbody>
       </Table>
