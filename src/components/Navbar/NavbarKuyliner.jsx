@@ -9,12 +9,16 @@ function NavbarKuyliner() {
     <Navbar expand={false} className="bg-body-tertiary mb-3 border ">
       <Container fluid>
         <div></div>
-        <Navbar.Brand className="d-flex">
+        <Navbar.Brand className="d-flex align-items-center">
           <img src={LogoKuyliner} style={{ height: "45px" }} />
+          <h5 className="m-0">Partner</h5>
         </Navbar.Brand>
-        <NavLink to={"/profile"} className="d-flex gap-3 align-items-center text-decoration-none text-black">
+        <NavLink
+          to={"/"}
+          className="d-flex gap-3 align-items-center text-decoration-none text-black"
+        >
           <img src={IconDefault} style={{ width: 40 }} alt="" />
-          <h4 className="m-0 ">Account</h4>
+          <h4 className="m-0">Account</h4>
         </NavLink>
       </Container>
     </Navbar>
