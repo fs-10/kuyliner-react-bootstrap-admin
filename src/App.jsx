@@ -5,6 +5,7 @@ import NavbarKuyliner from "./components/Navbar/NavbarKuyliner";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Profile from "./pages/Profile/Profile";
 import Product from "./pages/Product/Product";
+import Promotion from "./pages/Promotion/Promotion";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Col className={"p-0"}>
             <NavbarKuyliner />
             {/* <Profile /> */}
-            <Product />
+            {/* <Product /> */}
+            <Promotion />
           </Col>
         </Row>
       </Container>
