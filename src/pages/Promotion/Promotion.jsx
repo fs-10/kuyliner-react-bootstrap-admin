@@ -1,12 +1,16 @@
 import React from "react";
 import { Table, Image, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import DeletePopup from "../popup/DeletePopup";
 
 function Promotion() {
   return (
     <section className="m-3 p-3 border rounded-2 ">
       <div className="d-flex justify-content-between ">
         <h2>Promotion</h2>
-        <Button>Add Promotion</Button>
+        <NavLink to={"/promotion/add"}>
+          <Button>Add Promotion</Button>
+        </NavLink>
       </div>
       <hr />
       <Table striped bordered hover>
@@ -26,8 +30,10 @@ function Promotion() {
             <td>Otto</td>
             <td>@mdo</td>
             <td className="d-flex justify-content-center gap-2 ">
-              <Button variant="warning">Edit</Button>
-              <Button variant="danger">Delete</Button>
+              <NavLink to={"/promotion/edit"}>
+                <Button variant="warning">Edit</Button>
+              </NavLink>
+              <DeletePopup />
             </td>
           </tr>
           <tr>
@@ -36,8 +42,10 @@ function Promotion() {
             <td>Thornton</td>
             <td>@fat</td>
             <td className="d-flex justify-content-center gap-2 ">
-              <Button variant="warning">Edit</Button>
-              <Button variant="danger">Delete</Button>
+              <NavLink to={"/promotion/edit"}>
+                <Button variant="warning">Edit</Button>
+              </NavLink>
+              <DeletePopup />
             </td>
           </tr>
         </tbody>

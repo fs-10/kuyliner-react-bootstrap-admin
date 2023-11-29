@@ -2,11 +2,11 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-function EditProduct() {
+function EditPromotion() {
   return (
     <section className="m-3 p-3 border rounded-2 ">
       <div className="d-flex justify-content-between ">
-        <h2>Edit Product</h2>
+        <h2>Edit Promotion</h2>
       </div>
       <hr />
       <Form>
@@ -31,7 +31,7 @@ function EditProduct() {
         </Form.Select>
 
         <div className="my-3 d-flex gap-2 justify-content-end ">
-          <NavLink to={"/products"}>
+          <NavLink to={"/promotion"}>
             <Button variant="danger">Cancel</Button>
           </NavLink>
           <Button>Save</Button>
@@ -41,4 +41,4 @@ function EditProduct() {
   );
 }
 
-export default EditProduct;
+export default EditPromotion;
