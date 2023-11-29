@@ -14,7 +14,7 @@ function NavbarKuyliner() {
           <h5 className="m-0">Partner</h5>
         </Navbar.Brand>
         <NavLink
-          to={"/"}
+          to={"/profile"}
           className="d-flex gap-3 align-items-center text-decoration-none text-black"
         >
           <img src={IconDefault} style={{ width: 40 }} alt="" />

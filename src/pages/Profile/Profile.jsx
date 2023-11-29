@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import ImageDefault from "../../assets/icon-default.png";
 import {
   Envelope,
@@ -50,9 +51,11 @@ function Profile() {
           </p>
         </div>
         <div className="col">
-          <Button variant="warning" className="text-white">
-            Edit Profile
-          </Button>
+          <NavLink to={"/profile/edit"}>
+            <Button variant="warning" className="text-white">
+              Edit Profile
+            </Button>
+          </NavLink>
         </div>
       </div>
       <div className="row p-2 ">
